@@ -4,10 +4,6 @@ on:
   push:
   pull_request:
 
-jobs:
-  build:
-    container: ghcr.io/mariopartyrd/mp-gc-build:main
-
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
