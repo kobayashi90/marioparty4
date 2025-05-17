@@ -4,6 +4,10 @@ on:
   push:
   pull_request:
 
+jobs:
+  build:
+    container: ghcr.io/kobayashi90/mp-gc-build:main
+
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
